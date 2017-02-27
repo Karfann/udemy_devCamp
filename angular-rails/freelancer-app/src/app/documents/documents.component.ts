@@ -8,6 +8,8 @@ import { Document } from './document';
   styleUrls: ['./documents.component.css']
 })
 export class DocumentsComponent{
+
+  pageTitle: string = "Document Dashboard"; 
   
   documents: Document[] = [
     {
