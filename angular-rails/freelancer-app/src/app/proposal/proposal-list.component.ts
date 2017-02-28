@@ -4,8 +4,7 @@ import { Proposal } from './proposal';
 @Component({
   moduleId: module.id,
   selector: 'app-proposal-list',
-  templateUrl: './proposal-list.component.html',
-  styleUrls: ['./proposal-list.component.css']
+  templateUrl: './proposal-list.component.html'
 })
 export class ProposalListComponent implements OnInit {
 
