@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+10.times do |d|
+
+    FreelanceDocument.create!(
+        title: "Document #{d}", 
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        file_url: "www.google.com",
+        image_url: "https://membermouse.com/wp-content/uploads/2016/09/Freelancer-Liability-Featured.png")
+
+end
