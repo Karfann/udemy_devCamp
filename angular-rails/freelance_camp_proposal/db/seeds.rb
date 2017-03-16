@@ -18,3 +18,6 @@
         client_email: 'karfannacif@gmail.com'
     )
 end
+
+# Proposal.create!(customer: "Google", portfolio_url: string = 'http://google.com',tools: "Ruby on Rails, Angular 2 and Postgres",
+# estimated_hours: 120, hourly_rate: 100, weeks_to_complete: 24, client_email: 'karfannacif@gmail.com')
