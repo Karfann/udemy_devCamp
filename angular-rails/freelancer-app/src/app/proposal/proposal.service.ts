@@ -17,8 +17,17 @@ export class ProposalService {
       .catch(this.handleError);
   }
 
-  getProposal(id: number){
+  getProposal(id: number) {
     return this.http.get(this.proposalsUrl + "/" + id + '.json')
+  }
+
+  addProposal(proposal: Proposal) {
+
+    let headers = new Headers({ 'Content-Type': 'application/json' });
+    let options = new RequestOptions({ headers: headers });
+
+    return this.http.post(this.proposalsUrl, JSON.stringify(proposal), options)
+                    .map((response: Response) => response.json());
   }
 
   private handleError(error: Response | any) {
