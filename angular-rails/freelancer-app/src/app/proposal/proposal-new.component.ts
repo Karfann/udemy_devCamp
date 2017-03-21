@@ -10,6 +10,7 @@ import { Proposal } from './proposal';
 export class ProposalNewComponent implements OnInit {
 
   proposal = new Proposal;
+  submitted: boolean = false;
 
   constructor() { }
 
